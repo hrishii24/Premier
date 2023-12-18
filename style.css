@@ -132,3 +132,145 @@ body {
 #over2 img {
   height: 3vw;
 }
+
+#scroll {
+  height: 40vh;
+  width: 100%;
+  /* background-color: red; */
+  /* padding: 1vw; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  /* background-color: blue; */
+  display: inline-block;
+  padding: 2vw;
+  animation-name: anime;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#scroll img {
+  /* display: none; */
+  height: 95%;
+  width: 15%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 30% 30%;
+  margin: 1vw;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+#alphabet {
+  height: 10vh;
+  width: 100%;
+  /* background-color: tomato; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2vw;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+#alphabet h5 {
+  font-size: 1.7vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-decoration: underline;
+}
+
+#alphabet h6 {
+  color: #525252;
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 3px;
+  /* background-color: yellow; */
+  padding: 0.4vw 0.6vw;
+  cursor: pointer;
+}
+
+#alphabet h6:hover {
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+#page2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 5vw;
+  /* background-color: gold; */
+}
+
+#page2-part1 {
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+#page2-part1 h1 {
+  margin-top: 2vh;
+  font-size: 6vh;
+  font-family: monument;
+  text-transform: uppercase;
+}
+
+#page2-part2 {
+  height: 100%;
+  width: 49%;
+  object-fit: cover;
+}
+
+#page2-part2 img {
+  height: 70%;
+  width: 100%;
+}
+
+#page2-text {
+  margin-top: 4vw;
+  width: 100%;
+  height: 50%;
+  /* background-color: firebrick; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page2-text h4 {
+  font-size: 2.5vw;
+}
+
+#page2-text p {
+  font-size: 3vh;
+}
+
+.head {
+  width: 50%;
+  height: 100%;
+}
+
+.para {
+  width: 45%;
+  height: 100%;
+}
