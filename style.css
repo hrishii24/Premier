@@ -43,6 +43,27 @@ body {
   align-items: center;
 }
 
+#nav h1::after {
+  content: "©️";
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  top: -22%;
+  font-family: gilroy;
+}
+
+#nav h1::before {
+  content: "model management";
+  font-family: gilroy;
+  color: #949494;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  top: 14%;
+  left: 5%;
+}
+
 #nav h2 {
   /* background-color: yellow; */
   height: 100%;
@@ -342,4 +363,154 @@ body {
   justify-content: center;
   object-fit: cover;
   object-position: 0 50%;
+}
+
+#banner {
+  width: 100%;
+  height: 95vh;
+  /* background-color: rgb(255, 157, 30); */
+  padding: 3vw 5vw;
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 35%;
+}
+
+#updates {
+  padding: 3vw 5vw;
+}
+
+#updates > h1 {
+  text-align: center;
+  font-family: monument;
+  text-transform: uppercase;
+  font-size: 2.8vw;
+  padding-bottom: 3vw;
+}
+
+.elem {
+  height: 15vh;
+  width: 100%;
+  border-top: 2px solid #949494;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 3vw 5vw;
+}
+
+.elem h4 {
+  text-transform: uppercase;
+}
+
+.elem img {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  background-color: tomato;
+  object-fit: cover;
+  border-radius: 50%;
+  left: 20%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.elem:hover img {
+  opacity: 1;
+  left: 30%;
+}
+
+.elem .elem-part2 {
+  width: 50%;
+}
+
+.elem:nth-last-child(1) {
+  border-bottom: 2px solid #949494;
+}
+
+#marque {
+  /* height: 25vh; */
+  width: 100%;
+  /* background-color: teal; */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+#marque h1 {
+  display: inline-block;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: 575;
+  font-family: monument;
+  /* letter-spacing: 1px; */
+  color: transparent;
+  /* -webkit-text-stroke: 2px #fff; */
+  background-image: linear-gradient(
+    111.6deg,
+    rgba(73, 235, 221, 1) -0%,
+    rgba(83, 222, 219, 1) 7.1%,
+    rgba(105, 191, 217, 1) 13.4%,
+    rgba(127, 157, 214, 1) 18%,
+    rgba(155, 113, 208, 1) 23.9%,
+    rgba(178, 73, 201, 1) 28.8%,
+    rgba(200, 45, 192, 1) 33.3%,
+    rgba(213, 42, 180, 1) 38%,
+    rgba(232, 44, 145, 1) 44.2%,
+    rgba(239, 45, 128, 1) 52.4%,
+    rgba(249, 66, 107, 1) 59.7%,
+    rgba(252, 105, 98, 1) 67.3%,
+    rgba(252, 105, 98, 1) 74.4%,
+    rgba(254, 145, 92, 1) 82.2%,
+    rgba(255, 189, 86, 1) 88.2%,
+    rgba(254, 227, 80, 1) 92.8%,
+    rgba(254, 248, 75, 1) 98.4%
+  );
+
+  -webkit-background-clip: text;
+  margin-right: 16px;
+  animation-name: models;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes models {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 16px));
+  }
+}
+#footer {
+  height: 15vw;
+  width: 100%;
+  /* background-color: red; */
+  border-bottom: 2px solid #000;
+  /* padding: 4vh 2vh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer h1 {
+  width: 30%;
+  height: 100%;
+  font-family: monument;
+  padding: 4vh 2vh;
+
+  /* background-color: aquamarine; */
+  text-align: center;
+}
+
+#footer h2 {
+  text-align: center;
+  height: 100%;
+  border-right: 2px solid #000;
+  padding: 4vh 6vh;
 }
